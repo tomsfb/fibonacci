@@ -21,7 +21,7 @@ pipeline {
         }
         stage('ls') {
             steps {
-                sh('ls')
+                sh('ls ./scripts/')
             }
         }
         stage('Relative path') {
