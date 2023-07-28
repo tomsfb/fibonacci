@@ -19,6 +19,11 @@ pipeline {
                 sh('chmod +x ./scripts/fibonacci.sh')
             }
         }
+        stage('pwd') {
+            steps {
+                sh('echo pwd')
+            }
+        }
         stage('Relative path') {
             steps {
                 sh("./scripts/fibonacci.sh ${env.NUMBER}")
