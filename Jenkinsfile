@@ -19,9 +19,9 @@ pipeline {
                 sh('chmod +x ./scripts/fibonacci.sh')
             }
         }
-        stage('pwd') {
+        stage('ls') {
             steps {
-                sh('echo pwd')
+                sh('ls')
             }
         }
         stage('Relative path') {
